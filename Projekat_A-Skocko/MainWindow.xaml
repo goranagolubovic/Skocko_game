@@ -1,0 +1,153 @@
+<Window x:Class="Projekat_A_Skocko.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projekat_A_Skocko"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="850" Width="800">
+  <Grid>
+    <Grid.Background>
+      <ImageBrush ImageSource="template7.jpg"/>
+    </Grid.Background>
+    <Rectangle Fill="#d4965b" HorizontalAlignment="Left" Height="450" Margin="38,220,0,0" Stroke="Black" VerticalAlignment="Top" Width="332" RadiusX="10" RadiusY="10"/>
+    <Rectangle Fill="#d4b95b" HorizontalAlignment="Right" Height="450" Margin="0,220,39.6,0" Stroke="Black" VerticalAlignment="Top" Width="332" RadiusX="10" RadiusY="10"/>
+    <Grid x:Name="grid1" ShowGridLines="False" HorizontalAlignment="Left" VerticalAlignment="Top" Width="332" Margin="38,220,0,0" Height="450">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition></ColumnDefinition>
+        <ColumnDefinition></ColumnDefinition>
+        <ColumnDefinition></ColumnDefinition>
+        <ColumnDefinition></ColumnDefinition>
+      </Grid.ColumnDefinitions>
+      <Grid.RowDefinitions>
+        <RowDefinition></RowDefinition>
+        <RowDefinition></RowDefinition>
+        <RowDefinition></RowDefinition>
+        <RowDefinition></RowDefinition>
+        <RowDefinition></RowDefinition>
+        <RowDefinition></RowDefinition>
+      </Grid.RowDefinitions>
+      <Rectangle Grid.Row="0" Grid.Column="0" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="0" Grid.Column="1" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="0" Grid.Column="2" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="0" Grid.Column="3" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="1" Grid.Column="0" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="1" Grid.Column="1" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="1" Grid.Column="2" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="1" Grid.Column="3" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="2" Grid.Column="0" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="2" Grid.Column="1" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="2" Grid.Column="2" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="2" Grid.Column="3" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="3" Grid.Column="0" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="3" Grid.Column="1" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="3" Grid.Column="2" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="3" Grid.Column="3" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="4" Grid.Column="0" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="4" Grid.Column="1" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="4" Grid.Column="2" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="4" Grid.Column="3" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="5" Grid.Column="0" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="5" Grid.Column="1" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="5" Grid.Column="2" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="5" Grid.Column="3" Stroke="Black" StrokeThickness="2"></Rectangle>
+    </Grid>
+    <Grid x:Name="grid2" ShowGridLines="False" HorizontalAlignment="Right" VerticalAlignment="Top" Width="332" Margin="0,220,39.6,0" Height="450">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition></ColumnDefinition>
+        <ColumnDefinition></ColumnDefinition>
+        <ColumnDefinition></ColumnDefinition>
+        <ColumnDefinition></ColumnDefinition>
+      </Grid.ColumnDefinitions>
+      <Grid.RowDefinitions>
+        <RowDefinition></RowDefinition>
+        <RowDefinition></RowDefinition>
+        <RowDefinition></RowDefinition>
+        <RowDefinition></RowDefinition>
+        <RowDefinition></RowDefinition>
+        <RowDefinition></RowDefinition>
+      </Grid.RowDefinitions>
+      <Rectangle Grid.Row="0" Grid.Column="0" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="0" Grid.Column="1" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="0" Grid.Column="2" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="0" Grid.Column="3" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="1" Grid.Column="0" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="1" Grid.Column="1" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="1" Grid.Column="2" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="1" Grid.Column="3" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="2" Grid.Column="0" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="2" Grid.Column="1" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="2" Grid.Column="2" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="2" Grid.Column="3" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="3" Grid.Column="0" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="3" Grid.Column="1" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="3" Grid.Column="2" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="3" Grid.Column="3" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="4" Grid.Column="0" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="4" Grid.Column="1" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="4" Grid.Column="2" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="4" Grid.Column="3" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="5" Grid.Column="0" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="5" Grid.Column="1" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="5" Grid.Column="2" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Row="5" Grid.Column="3" Stroke="Black" StrokeThickness="2"></Rectangle>
+    </Grid>
+    <Rectangle Fill="#d4875b" HorizontalAlignment="Left" Height="85" Margin="123,694,0,0" RadiusX="10" Stroke="Black" VerticalAlignment="Top" Width="546" RadiusY="10"/>
+    <Grid ShowGridLines="False" HorizontalAlignment="Left"  Width="546" Margin="123,694,0,0" Height="85" VerticalAlignment="Top">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition></ColumnDefinition>
+        <ColumnDefinition></ColumnDefinition>
+        <ColumnDefinition></ColumnDefinition>
+        <ColumnDefinition></ColumnDefinition>
+        <ColumnDefinition></ColumnDefinition>
+      </Grid.ColumnDefinitions>
+      <Rectangle Grid.Column="0" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Column="1" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Column="2" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Column="3" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Rectangle Grid.Column="4" Stroke="Black" StrokeThickness="2"></Rectangle>
+      <Image Grid.Column="0" Source="monkey.png" MouseDown="monkey_MouseDown"></Image>
+      <Image Grid.Column="1" Source="banana.png" MouseDown="banana_MouseDown"></Image>
+      <Image Grid.Column="2" Source="giraffe.png" MouseDown="giraffe_MouseDown">
+      </Image>
+      <Image Grid.Column="3" Source="lion.png" MouseDown="lion_MouseDown"></Image>
+      <Image Grid.Column="4" Source="jungle.png" MouseDown="jungle_MouseDown"></Image>
+    </Grid>
+    <TextBlock HorizontalAlignment="Left" Margin="151,58,0,0" TextWrapping="Wrap" Text="WELCOME" VerticalAlignment="Top" Height="122" Width="155" RenderTransformOrigin="0.5,0.5" FontSize="30" FontWeight="Bold">
+      <TextBlock.RenderTransform>
+        <TransformGroup>
+          <ScaleTransform/>
+          <SkewTransform/>
+          <RotateTransform Angle="-20.099"/>
+          <TranslateTransform/>
+        </TransformGroup>
+      </TextBlock.RenderTransform>
+    </TextBlock>
+    <TextBlock HorizontalAlignment="Left" Margin="189,87,0,0" TextWrapping="Wrap" Text="TO THE" VerticalAlignment="Top" Height="122" Width="155" RenderTransformOrigin="0.5,0.5" FontSize="30" FontWeight="Bold">
+      <TextBlock.RenderTransform>
+        <TransformGroup>
+          <ScaleTransform/>
+          <SkewTransform/>
+          <RotateTransform Angle="-20.099"/>
+          <TranslateTransform/>
+        </TransformGroup>
+      </TextBlock.RenderTransform>
+    </TextBlock>
+    <TextBlock HorizontalAlignment="Left" Margin="206,124,0,0" TextWrapping="Wrap" Text="JUNGLE" VerticalAlignment="Top" Height="122" Width="155" RenderTransformOrigin="0.5,0.5" FontSize="30" FontWeight="Bold">
+      <TextBlock.RenderTransform>
+        <TransformGroup>
+          <ScaleTransform/>
+          <SkewTransform/>
+          <RotateTransform Angle="-20.099"/>
+          <TranslateTransform/>
+        </TransformGroup>
+      </TextBlock.RenderTransform>
+    </TextBlock>
+    <Canvas x:Name="musicCanvas" MouseLeftButtonDown="control_Music" HorizontalAlignment="Left" Height="72" Margin="686,86,0,0" VerticalAlignment="Top" Width="68" RenderTransformOrigin="0.096,0.484">
+      <Canvas.Background>
+        <ImageBrush ImageSource="volume.png"/>
+      </Canvas.Background>
+    </Canvas>
+  </Grid>
+</Window>
+

@@ -1,0 +1,17 @@
+C:\Users\goran\Desktop\Projekat_A-Skocko\Projekat_A-Skocko\bin\Debug\Projekat_A-Skocko.exe.config
+C:\Users\goran\Desktop\Projekat_A-Skocko\Projekat_A-Skocko\bin\Debug\Projekat_A-Skocko.exe
+C:\Users\goran\Desktop\Projekat_A-Skocko\Projekat_A-Skocko\bin\Debug\Projekat_A-Skocko.pdb
+C:\Users\goran\Desktop\Projekat_A-Skocko\Projekat_A-Skocko\obj\Debug\Projekat_A-Skocko.csproj.AssemblyReference.cache
+C:\Users\goran\Desktop\Projekat_A-Skocko\Projekat_A-Skocko\obj\Debug\MainWindow.g.cs
+C:\Users\goran\Desktop\Projekat_A-Skocko\Projekat_A-Skocko\obj\Debug\App.g.cs
+C:\Users\goran\Desktop\Projekat_A-Skocko\Projekat_A-Skocko\obj\Debug\Projekat_A-Skocko_MarkupCompile.cache
+C:\Users\goran\Desktop\Projekat_A-Skocko\Projekat_A-Skocko\obj\Debug\Projekat_A-Skocko_MarkupCompile.lref
+C:\Users\goran\Desktop\Projekat_A-Skocko\Projekat_A-Skocko\obj\Debug\MainWindow.baml
+C:\Users\goran\Desktop\Projekat_A-Skocko\Projekat_A-Skocko\obj\Debug\Projekat_A-Skocko.g.resources
+C:\Users\goran\Desktop\Projekat_A-Skocko\Projekat_A-Skocko\obj\Debug\Projekat_A_Skocko.Properties.Resources.resources
+C:\Users\goran\Desktop\Projekat_A-Skocko\Projekat_A-Skocko\obj\Debug\Projekat_A-Skocko.csproj.GenerateResource.cache
+C:\Users\goran\Desktop\Projekat_A-Skocko\Projekat_A-Skocko\obj\Debug\Projekat_A-Skocko.csproj.CoreCompileInputs.cache
+C:\Users\goran\Desktop\Projekat_A-Skocko\Projekat_A-Skocko\obj\Debug\Projekat_A-Skocko.exe
+C:\Users\goran\Desktop\Projekat_A-Skocko\Projekat_A-Skocko\obj\Debug\Projekat_A-Skocko.pdb
+C:\Users\goran\Desktop\Projekat_A-Skocko\Projekat_A-Skocko\obj\Debug\ResultWindow.g.cs
+C:\Users\goran\Desktop\Projekat_A-Skocko\Projekat_A-Skocko\obj\Debug\ResultWindow.baml
