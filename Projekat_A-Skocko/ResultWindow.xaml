@@ -5,21 +5,68 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Projekat_A_Skocko"
         mc:Ignorable="d"
-        Title="ResultWindow" Height="927.573" Width="841.197">
-  <Grid Margin="0,0,-0.2,-2.2">
-    <Grid.Background>
-      <ImageBrush ImageSource="jungle_template6.jpg"/>
-    </Grid.Background>
-    <TextBlock x:Name="resultTextBlock" HorizontalAlignment="Left" Margin="251,295,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="232" Width="326" FontSize="36"/>
-    <Button Click="Button_Click" Margin="292,374,296.6,126.8">
-      <Button.Template>
-        <ControlTemplate TargetType="Button">
-          <Grid Margin="79,0,0,179.2">
-            <Rectangle Fill="{TemplateBinding Background}" Margin="0,729,82.4,0" RadiusX="30" RadiusY="30"/>
-            <ContentPresenter/>
-          </Grid>
-        </ControlTemplate>
-      </Button.Template>
+        Title="ResultWindow" Height="762.671" Width="882.422" ResizeMode="NoResize" WindowStartupLocation="Manual"
+        Top="30"
+        Left="200">
+  <Grid Margin="0,0,0,0">
+    <Grid Margin="0,0,0,0">
+      <Grid.Background>
+        <ImageBrush ImageSource="template10.PNG"/>
+      </Grid.Background>
+      <Rectangle HorizontalAlignment="Left" Height="285" Margin="178,246,0,0" RadiusY="30" RadiusX="30" VerticalAlignment="Top" Width="511">
+        <Rectangle.Fill>
+          <ImageBrush ImageSource="wood_texture.PNG"/>
+        </Rectangle.Fill>
+      </Rectangle>
+      <TextBlock Text="" x:Name="resultTextBlock" HorizontalAlignment="Left" Margin="243,299,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="179" Width="300" FontSize="34" RenderTransformOrigin="0.052,-0.253">
+        <TextBlock.Background>
+          <ImageBrush/>
+        </TextBlock.Background>
+      </TextBlock>
+      <Canvas x:Name="monkeyCanvas" HorizontalAlignment="Left" Height="285" Margin="548,246,0,0" VerticalAlignment="Top" Width="323">
+        <Canvas.Background>
+          <ImageBrush ImageSource="perfect.png"/>
+        </Canvas.Background>
+        <TextBlock x:Name="resultBlock" Canvas.Left="222" TextWrapping="Wrap" Text="" Canvas.Top="25" Height="58" Width="73" TextAlignment="Center" FontSize="40" RenderTransformOrigin="0.5,0.5" FontWeight="Bold">
+          <TextBlock.RenderTransform>
+            <TransformGroup>
+              <ScaleTransform/>
+              <SkewTransform/>
+              <RotateTransform Angle="10.171"/>
+              <TranslateTransform/>
+            </TransformGroup>
+          </TextBlock.RenderTransform>
+        </TextBlock>
+      </Canvas>
+      <Rectangle HorizontalAlignment="Left" Height="143" Margin="178,43,0,0" RadiusY="30" RadiusX="30" VerticalAlignment="Top" Width="511">
+        <Rectangle.Fill>
+          <ImageBrush ImageSource="wood_texture.PNG"/>
+        </Rectangle.Fill>
+      </Rectangle>
+      <TextBlock TextAlignment="Center" HorizontalAlignment="Left" Height="114" Margin="178,72,0,0" TextWrapping="Wrap" Text="GAME OVER" VerticalAlignment="Top" Width="511" FontSize="80" FontWeight="Bold" FontFamily="Stencil">
+        
+      </TextBlock>
+    </Grid>
+    <Button Click="playAgain" Content="PLAY AGAIN" HorizontalAlignment="Left" Margin="176,592,0,0" VerticalAlignment="Top" Width="231" Height="77" FontSize="24" FontWeight="Bold" RenderTransformOrigin="10,10" BorderBrush="{x:Null}">
+      <Button.Background>
+        <ImageBrush ImageSource="wood_texture.PNG"/>
+      </Button.Background>
+      <Button.Resources>
+        <Style TargetType="Border">
+          <Setter Property="CornerRadius" Value="10"/>
+        </Style>
+      </Button.Resources>
     </Button>
+    <Button  Click="quitTheGame" Content="QUIT" HorizontalAlignment="Left" Margin="465,592,0,0" VerticalAlignment="Top" Width="231" Height="77" RenderTransformOrigin="1.224,0.621" FontSize="24" FontWeight="Bold" BorderBrush="{x:Null}">
+      <Button.Background>
+        <ImageBrush ImageSource="wood_texture.PNG"/>
+      </Button.Background>
+      <Button.Resources>
+        <Style TargetType="Border">
+          <Setter Property="CornerRadius" Value="10"/>
+        </Style>
+      </Button.Resources>
+    </Button>
+
   </Grid>
 </Window>

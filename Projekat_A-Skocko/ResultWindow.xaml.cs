@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,17 +23,36 @@ namespace Projekat_A_Skocko
     private int score;
     public ResultWindow(int score)
     {
-      this.score = score;
+      this.score = score;;
       InitializeComponent();
-      if(score>0)
-      resultTextBlock.Text = "Congratulations! You found the winning combination.Your score is " + score;
+      if (score > 0)
+      {
+        ImageBrush brush = new ImageBrush();
+        brush.ImageSource = new BitmapImage(new Uri(ConfigurationManager.AppSettings.Get("HAPPY_MONKEY_IMG"), UriKind.Relative));
+        monkeyCanvas.Background = brush;
+        resultBlock.Text = score.ToString();
+        resultTextBlock.Text = ConfigurationManager.AppSettings.Get("WIN_TEXT");
+      }
       else
-        resultTextBlock.Text = "You lost all your chance.Your score is " + score;
+      {
+        ImageBrush brush = new ImageBrush();
+        brush.ImageSource = new BitmapImage(new Uri(ConfigurationManager.AppSettings.Get("CRY_MONKEY_IMG"), UriKind.Relative));
+        monkeyCanvas.Background = brush;
+        resultTextBlock.Text = ConfigurationManager.AppSettings.Get("LOSE_TEXT");
+      }
     }
 
-    private void Button_Click(object sender, RoutedEventArgs e)
-    {
 
+    private void quitTheGame(object sender, RoutedEventArgs e)
+    {
+      System.Windows.Application.Current.Shutdown();
+    }
+
+    private void playAgain(object sender, RoutedEventArgs e)
+    {
+      Window window = new GameWindow();
+      this.Close();
+      window.Show();
     }
   }
 }
