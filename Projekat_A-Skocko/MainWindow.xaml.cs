@@ -55,5 +55,17 @@ namespace Projekat_A_Skocko
         player.Stop();
       }
     }
+
+    private void bestScores(object sender, RoutedEventArgs e)
+    {
+      Window window = new TopScoresWindow(this);
+      this.Hide();
+      window.Show();
+    }
+
+    private void exit(object sender, RoutedEventArgs e)
+    {
+      Application.Current.Shutdown();
+    }
   }
 }

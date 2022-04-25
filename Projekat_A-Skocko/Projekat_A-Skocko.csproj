@@ -62,6 +62,9 @@
     <Compile Include="ResultWindow.xaml.cs">
       <DependentUpon>ResultWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TopScoresWindow.xaml.cs">
+      <DependentUpon>TopScoresWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="GameWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -79,6 +82,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="ResultWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TopScoresWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -170,6 +177,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="perfect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="stopwatch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="wood_texture%281%29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="right-arrow.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

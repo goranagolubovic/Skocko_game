@@ -1,0 +1,73 @@
+<Window x:Class="Projekat_A_Skocko.TopScoresWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projekat_A_Skocko"
+        mc:Ignorable="d"
+        Title="Top Scores" Height="762.671" Width="882.422" ResizeMode="NoResize" WindowStartupLocation="Manual"
+        Top="30"
+        Left="200">
+    <Grid Margin="0,0,0,0">
+        <Grid Margin="0,0,0,0">
+            <Grid.Background>
+                <ImageBrush ImageSource="template10.PNG"/>
+            </Grid.Background>
+            <Rectangle HorizontalAlignment="Left" Height="285" Margin="178,246,0,0" RadiusY="30" RadiusX="30" VerticalAlignment="Top" Width="511">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="wood_texture.PNG"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle HorizontalAlignment="Left" Height="143" Margin="178,43,0,0" RadiusY="30" RadiusX="30" VerticalAlignment="Top" Width="511">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="wood_texture.PNG"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <TextBlock TextAlignment="Center" HorizontalAlignment="Left" Height="114" Margin="178,72,0,0" TextWrapping="Wrap" Text="TOP SCORES" VerticalAlignment="Top" Width="511" FontSize="80" FontWeight="Bold" FontFamily="Stencil">
+
+            </TextBlock>
+            <Grid  HorizontalAlignment="Left" Height="190" Margin="296,279,0,0" VerticalAlignment="Top" Width="263">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+            </Grid>
+            <TextBlock  HorizontalAlignment="Left" Height="28" Margin="319,304,0,0" TextWrapping="Wrap" Text="      1." VerticalAlignment="Top" Width="50" FontSize="20"/>
+            <TextBlock HorizontalAlignment="Left" Height="28" Margin="319,332,0,0" TextWrapping="Wrap" Text="      2." VerticalAlignment="Top" Width="50" FontSize="20"/>
+            <TextBlock  HorizontalAlignment="Left" Height="28" Margin="319,360,0,0" TextWrapping="Wrap" Text="      3." VerticalAlignment="Top" Width="50" FontSize="20"/>
+            <TextBlock HorizontalAlignment="Left" Height="28" Margin="319,388,0,0" TextWrapping="Wrap" Text="      4." VerticalAlignment="Top" Width="50" FontSize="20"/>
+            <TextBlock HorizontalAlignment="Left" Height="33" Margin="319,416,0,0" TextWrapping="Wrap" Text="      5." VerticalAlignment="Top" Width="50" FontSize="20" RenderTransformOrigin="0.996,0.503"/>
+            <TextBlock  x:Name="score1" HorizontalAlignment="Left" Height="28" Margin="427,304,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="116" FontSize="20" RenderTransformOrigin="1.744,0.614" Text="" FontWeight="Bold"/>
+            <TextBlock x:Name="score2" HorizontalAlignment="Left" Height="28" Margin="427,332,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="116" FontSize="20" RenderTransformOrigin="1.744,0.614" Text="" FontWeight="Bold"/>
+            <TextBlock x:Name="score3" HorizontalAlignment="Left" Height="28" Margin="427,360,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="116" FontSize="20" RenderTransformOrigin="1.744,0.614" Text="" FontWeight="Bold"/>
+            <TextBlock x:Name="score4" HorizontalAlignment="Left" Height="28" Margin="427,388,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="116" FontSize="20" RenderTransformOrigin="1.744,0.614" Text="" FontWeight="Bold"/>
+            <TextBlock x:Name="score5" HorizontalAlignment="Left" Height="28" Margin="427,416,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="116" FontSize="20" RenderTransformOrigin="1.744,0.614" Text="" FontWeight="Bold"/>
+        </Grid>
+        <Button Click="back" Content="GO BACK" HorizontalAlignment="Left" Margin="176,592,0,0" VerticalAlignment="Top" Width="231" Height="77" FontSize="24" FontWeight="Bold" RenderTransformOrigin="10,10" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="wood_texture.PNG"/>
+            </Button.Background>
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button  Click="quitTheGame" Content="QUIT" HorizontalAlignment="Left" Margin="465,592,0,0" VerticalAlignment="Top" Width="231" Height="77" RenderTransformOrigin="1.224,0.621" FontSize="24" FontWeight="Bold" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="wood_texture.PNG"/>
+            </Button.Background>
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+    </Grid>
+</Window>

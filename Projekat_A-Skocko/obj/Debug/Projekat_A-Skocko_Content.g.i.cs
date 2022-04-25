@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("perfect.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("right-arrow.png")]
 
 

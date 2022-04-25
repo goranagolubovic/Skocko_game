@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Configuration;
+using System.Windows.Threading;
+
 namespace Projekat_A_Skocko
 {
   /// <summary>
@@ -40,19 +42,30 @@ namespace Projekat_A_Skocko
       get;
       set;
     }
-   
+    private DateTime startTime;
+    private DispatcherTimer dtimer;
     public GameWindow()
     {
       repeativeItems = new List<Tuple<string, int>>();
       rowFilled = new Dictionary<int, string>();
       itemsNotPositionedWell = new Dictionary<int, string>();
       result = new List<Tuple<string, int>>();
-      InitializeComponent();
-      generateResult();
       /*result.Add(new Tuple<string,int>("monkey", 0));
       result.Add(new Tuple<string, int>("jungle", 1));
       result.Add(new Tuple<string, int>("banana", 2));
       result.Add(new Tuple<string, int>("giraffe", 3));*/
+      dtimer = new DispatcherTimer();
+      dtimer.Interval = TimeSpan.FromSeconds(1);
+      dtimer.Tick += Timer_Tick;
+      dtimer.Start();
+      startTime = DateTime.Now;
+      InitializeComponent();
+      generateResult();
+    }
+    private void Timer_Tick(object sender, EventArgs e)
+    {
+      string time = (DateTime.Now - startTime).ToString().Substring(0, 8);
+      timerTextBlock.Text =time;
     }
     private void generateResult()
     {
@@ -197,6 +210,8 @@ namespace Projekat_A_Skocko
     }
     private void fillGrid2(int row)
     {
+      Canvas[] arrows = { arrowRow1, arrowRow2, arrowRow3, arrowRow4, arrowRow5, arrowRow6 };
+      arrows[currentRow].Visibility = Visibility.Hidden;
       foreach (KeyValuePair<int, string> elem in rowFilled)
       {
         itemsNotPositionedWell.Add(elem);
@@ -256,10 +271,20 @@ namespace Projekat_A_Skocko
       repeativeItems.Clear();
       currentRow++;
       resultWindowScore = score;
+
+      if (currentRow < grid1.RowDefinitions.Count - 1)
+        arrows[currentRow].Visibility = Visibility.Visible;
+
       itemsNotPositionedWell.Clear();
-      score -= 20;
       if (correctItems == grid1.ColumnDefinitions.Count)
       {
+        dtimer.Stop();
+        int hoursOfPlaying = Convert.ToInt32(timerTextBlock.Text.Substring(0, 2));
+        int minutesOfPlaying = Convert.ToInt32(timerTextBlock.Text.Substring(3, 2));
+        int secondsOfPlaying = Convert.ToInt32(timerTextBlock.Text.Substring(6, 2));
+        int timeOfPlaying = hoursOfPlaying * 3600 + minutesOfPlaying * 60 + secondsOfPlaying;
+        double totallyScore = (double)score / (double)timeOfPlaying * 100;
+        resultWindowScore = Convert.ToInt32(totallyScore);
         var timer = new System.Windows.Threading.DispatcherTimer { Interval = TimeSpan.FromSeconds(1) };
         timer.Start();
         timer.Tick += (sender, args) =>
@@ -272,7 +297,14 @@ namespace Projekat_A_Skocko
       }
       else if (currentRow == grid1.RowDefinitions.Count)
       {
-        resultWindowScore = score;
+        score -= 20;
+        dtimer.Stop();
+        int hoursOfPlaying = Convert.ToInt32(timerTextBlock.Text.Substring(0, 2));
+        int minutesOfPlaying = Convert.ToInt32(timerTextBlock.Text.Substring(3, 2));
+        int secondsOfPlaying = Convert.ToInt32(timerTextBlock.Text.Substring(6, 2));
+        int timeOfPlaying = hoursOfPlaying * 3600 + minutesOfPlaying * 60 + secondsOfPlaying;
+        double totallyScore = (double)score / (double)timeOfPlaying * 100;
+        resultWindowScore = Convert.ToInt32(totallyScore);
         var timer = new System.Windows.Threading.DispatcherTimer { Interval = TimeSpan.FromSeconds(1) };
         timer.Start();
         timer.Tick += (sender, args) =>
@@ -287,6 +319,7 @@ namespace Projekat_A_Skocko
       {
         return;
       }
+      score -= 20;
       wrongPlaceItems = 0;
       correctItems = 0;
     }

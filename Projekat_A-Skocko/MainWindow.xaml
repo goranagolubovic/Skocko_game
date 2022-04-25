@@ -8,16 +8,66 @@
         Title="MainWindow" Height="817.619" Width="700.159" WindowStartupLocation="Manual"
         Top="0"
         Left="300" ResizeMode="NoResize">
-  <Grid ShowGridLines="False" Margin="0,0,3.6,0">
-    <Grid.Background>
-      <ImageBrush ImageSource="jungle_template4.jpg"/>
-    </Grid.Background>
-    <Button  Click="startGame" Content="PLAY" BorderThickness="5" HorizontalAlignment="Left" Margin="225,442,0,0" VerticalAlignment="Top" Width="233" Height="81" FontSize="36" FontWeight="Bold" Background="{x:Null}" BorderBrush="#FF689064"/>
-    <Canvas x:Name="musicCanvas" MouseLeftButtonDown="control_Music" HorizontalAlignment="Left" Height="72" Margin="300,567,0,0" VerticalAlignment="Top" Width="68" RenderTransformOrigin="0.096,0.484">
-      <Canvas.Background>
-        <ImageBrush ImageSource="volume.png"/>
-      </Canvas.Background>
-    </Canvas>
-  </Grid>
+    <Grid ShowGridLines="False" Margin="0,0,3.6,0">
+        <Grid.Background>
+            <ImageBrush ImageSource="template7.jpg"/>
+        </Grid.Background>
+        <TextBlock HorizontalAlignment="Left" Margin="151,56,0,0" TextWrapping="Wrap" Text="LET'S " VerticalAlignment="Top" Height="122" Width="155" RenderTransformOrigin="0.5,0.5" FontSize="30" FontWeight="Bold">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-20.099"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="174,96,0,0" TextWrapping="Wrap" Text="PLAY" VerticalAlignment="Top" Height="122" Width="155" RenderTransformOrigin="0.364,0.499" FontSize="30" FontWeight="Bold">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-20.099"/>
+                    <TranslateTransform X="1.242" Y="7.251"/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+    <Button  Click="startGame" Content="PLAY" BorderThickness="5" HorizontalAlignment="Left" Margin="246,250,0,0" VerticalAlignment="Top" Width="233" Height="81" FontSize="36" FontWeight="Bold" BorderBrush="Black">
+      <Button.Background>
+        <ImageBrush ImageSource="wood_texture(1).PNG"/>
+      </Button.Background>
+      <Button.Resources>
+        <Style TargetType="Border">
+          <Setter Property="CornerRadius" Value="10"/>
+        </Style>
+      </Button.Resources>
+    </Button>
+    <Button  Click="bestScores" Content="TOP SCORES" BorderThickness="5" HorizontalAlignment="Left" Margin="246,362,0,0" VerticalAlignment="Top" Width="233" Height="81" FontSize="36" FontWeight="Bold" BorderBrush="Black">
+        <Button.Background>
+          <ImageBrush ImageSource="wood_texture(1).PNG"/>
+        </Button.Background>
+        <Button.Resources>
+          <Style TargetType="Border">
+            <Setter Property="CornerRadius" Value="10"/>
+          </Style>
+        </Button.Resources>
+      </Button>
+    <Button  Click="exit" Content="EXIT" BorderThickness="5" HorizontalAlignment="Left" Margin="246,474,0,0" VerticalAlignment="Top" Width="233" Height="81" FontSize="36" FontWeight="Bold" BorderBrush="Black">
+      <Button.Background>
+        <ImageBrush ImageSource="wood_texture(1).PNG"/>
+      </Button.Background>
+      <Button.Resources>
+        <Style TargetType="Border">
+          <Setter Property="CornerRadius" Value="10"/>
+        </Style>
+      </Button.Resources>
+    </Button>
+    <Canvas x:Name="musicCanvas" MouseLeftButtonDown="control_Music" HorizontalAlignment="Left" Height="72" Margin="586,50,0,0" VerticalAlignment="Top" Width="68" RenderTransformOrigin="0.096,0.484">
+            <Canvas.Background>
+                <ImageBrush ImageSource="volume.png"/>
+            </Canvas.Background>
+        </Canvas>
+        <TextBlock HorizontalAlignment="Left" Height="43" Margin="569,127,0,0" TextWrapping="Wrap" Text="Sound on/off" VerticalAlignment="Top" Width="111" FontWeight="Bold" FontSize="16"/>
+    </Grid>
 </Window>
 

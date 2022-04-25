@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,7 +24,10 @@ namespace Projekat_A_Skocko
     private int score;
     public ResultWindow(int score)
     {
-      this.score = score;;
+      this.score = score;
+      StreamWriter sw = new StreamWriter(ConfigurationManager.AppSettings.Get("SCORE_FILE"),true);
+      sw.WriteLine(score);
+      sw.Close();
       InitializeComponent();
       if (score > 0)
       {

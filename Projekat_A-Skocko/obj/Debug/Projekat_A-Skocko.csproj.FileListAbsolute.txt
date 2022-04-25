@@ -17,3 +17,5 @@ C:\Users\goran\Desktop\Projekat_A-Skocko\Projekat_A-Skocko\obj\Debug\ResultWindo
 C:\Users\goran\Desktop\Projekat_A-Skocko\Projekat_A-Skocko\obj\Debug\ResultWindow.baml
 C:\Users\goran\Desktop\Projekat_A-Skocko\Projekat_A-Skocko\obj\Debug\GameWindow.g.cs
 C:\Users\goran\Desktop\Projekat_A-Skocko\Projekat_A-Skocko\obj\Debug\GameWindow.baml
+C:\Users\goran\Desktop\Projekat_A-Skocko\Projekat_A-Skocko\obj\Debug\TopScoresWindow.g.cs
+C:\Users\goran\Desktop\Projekat_A-Skocko\Projekat_A-Skocko\obj\Debug\TopScoresWindow.baml
