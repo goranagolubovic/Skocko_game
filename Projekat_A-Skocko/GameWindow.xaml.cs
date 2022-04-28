@@ -50,10 +50,6 @@ namespace Projekat_A_Skocko
       rowFilled = new Dictionary<int, string>();
       itemsNotPositionedWell = new Dictionary<int, string>();
       result = new List<Tuple<string, int>>();
-      /*result.Add(new Tuple<string,int>("monkey", 0));
-      result.Add(new Tuple<string, int>("jungle", 1));
-      result.Add(new Tuple<string, int>("banana", 2));
-      result.Add(new Tuple<string, int>("giraffe", 3));*/
       dtimer = new DispatcherTimer();
       dtimer.Interval = TimeSpan.FromSeconds(1);
       dtimer.Tick += Timer_Tick;
@@ -74,7 +70,6 @@ namespace Projekat_A_Skocko
       {
         result.Add(new Tuple<string, int>(arraysOfSymbols[random.Next(arraysOfSymbols.Length)], i));
       }
-      MessageBox.Show(string.Join(", ", result));
     }
     private Tuple<Rectangle, int> findNotFilledRectangle()
     {
@@ -272,7 +267,7 @@ namespace Projekat_A_Skocko
       currentRow++;
       resultWindowScore = score;
 
-      if (currentRow < grid1.RowDefinitions.Count - 1)
+      if (currentRow < grid1.RowDefinitions.Count)
         arrows[currentRow].Visibility = Visibility.Visible;
 
       itemsNotPositionedWell.Clear();
